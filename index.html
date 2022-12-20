@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./Projet Portfolio/style.css">
+    <link rel="stylesheet" href="./Projet Portfolio/node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="./Projet Portfolio/script.js" defer></script>
+</head>
+<body>
+
+<!-- --------------------------------------------- -->
+<!-- ----------------- NAV BAR  ------------------ -->
+<!-- --------------------------------------------- -->
+
+      
+      <div class="select-div-bar">
+        <select class="select_nav"  onchange="location = this.value;">
+            <option value="#acceuil_desktop">Acceuil</option>
+            <option value="#boissons">Nos Verres</option>
+            <option value="#cv">Nos Jeux</option>
+            <option value="#contact"><a href="">Nos Contacts</a></option>
+            <option value="#cartes">Nos Bars</option>
+        </select>
+      </div>
+      
+<!-- --------------------------------------------- -->
+<!-- ----------------  ACCEUIL  ---------------- -->
+<!-- --------------------------------------------- -->
+
+    <div id="acceuil_desktop" class="img_acceuil">
+      <h1>𝕷𝖊 𝕾𝖜𝖊𝖊𝖙𝖎𝖊 𝕸𝖆𝖑𝖊𝖓𝖙𝖎𝖓𝖊𝖘</h1>
+    </div>
+
+<!-- --------------------------------------------- -->
+<!-- ----------------  VERRES  ---------------- -->
+<!-- --------------------------------------------- -->
+
+<div id="boissons_desktop" class="ardoise">
+  <h1>Découvrez nos cocktails du moment</h1>
+  <div id="boissons" class="cards_boissons">
+      <div class="cards carte1">
+        <img class="first_image" src="./Projet Portfolio/Ressources/curaco.webp">
+      </div>
+      <section class="first_texte"><h1>Le Blue Lagoon :</h1><br><p> Difficile de ne pas reconnaître le cocktail Blue Lagoon avec sa couleur bleu vif. Cette boisson azuréenne se retrouve aussi sur le nom français Lagon Bleu</p></section>
+      <section class="snd_texte"><h1>Le Bloody Mary : </h1><br><p> Selon certaines sources, il s’agirait de la fameuse reine d'Angleterre, Marie Tudor, dont le règne a été marqué par une grande cruauté et de nombreux opposants brûlés au bûcher.</p></section>
+      <div class="cards carte2">
+        <img class="snd_image" src="./Projet Portfolio/Ressources/bloody-mary.jpg">
+      </div>
+      <div class="cards carte3">
+            <img class="third_image" src="./Projet Portfolio/Ressources/purple.jpeg">
+      </div>
+      <section class="third_texte"><h1>Le Purple Rain : </h1><br><p>Il fut nommé ainsi en l’honneur de la populaire ballade de Prince Purple Rain issu de son album du même nom.</p></section>
+</div>
+</div>
+
+
+<!-- --------------------------------------------- -->
+<!-- ------------------  JEUX  ------------------ -->
+<!-- --------------------------------------------- -->
+
+<div class="slide" id="cv"><h1>Vous trouverez aussi de quoi passer le temps ici :</h1></div>
+
+<!-- --------------------------------------------- -->
+<!-- ------------------  CONTACT  ------------------ -->
+<!-- --------------------------------------------- -->
+
+    <div class="contact-container">
+      <form action="" method="GET" id="formulaire">
+        <div id="contact" class="contact">
+        <h1>Déjà client et vous souhaitez nous laisser un mot ?</h1>
+        <p style="color: white;">(Formulaire fictif)</p>
+        <label for="prenom">Choisir un prénom :</label>
+        <br>
+        <input type="text" name="prenom" id="prenom" placeholder="Prenom" required>
+        <br>
+        <label for="nom">Choisir un nom :</label>
+        <br>
+        <input type="text" name="nom" placeholder="Nom" required>
+        <br>
+        <label for="birthday">Date de naissance :</label> <br>
+        <input type="date" name="birthday" id="birthday" required>
+        <br>
+        <label for="email">Votre email :</label>
+        <br>
+        <input placeholder="Email@example.com" type="email" name="email" id="email" required>
+        <br>
+        <label for="comm">Commentaire :</label>
+        <br>
+        <textarea placeholder="C'est grace a vous que nous sommes ici, alors on vous remercie par avance !" name="comm" id="comm" cols="18" rows="5" required></textarea>
+        <br><br>
+        <input class="envoyer" type="submit" value="Envoyer">
+      </div>
+    </form>
+  </div>
+
+
+<!-- --------------------------------------------- -->
+<!-- ------------------  FOOTER  ------------------ -->
+<!-- --------------------------------------------- -->
+
+  <footer>
+    <div class="carteBars">
+      <div id="cartes">
+        <h1>Nous sommes a cette adresse :</h1>
+        <p>Adresse fictive :<br> 577 Groove Street, L.A<br><br>
+        Nous avons aussi d'autres bars ici, et là :<br><br></p>
+      </div>
+      <div>
+        <img src="./Projet Portfolio/Ressources/carte_fr.jpg" alt="" srcset="">
+      </div>
+    </div>
+  </footer>
+  <div>
+    
+  </div>
+</body>
+</html>
