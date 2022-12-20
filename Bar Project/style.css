@@ -291,7 +291,7 @@ url(./Ressources/client.jpg) no-repeat center/cover fixed;
         url('./Ressources/bar2.jpg') center/cover fixed;
         position: relative;
         overflow-x: hidden;
-        margin-top: -200px;
+        margin-top: -220px;
     }
     .img_acceuil>h1{
         animation-duration: 2s;
