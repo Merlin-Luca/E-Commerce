@@ -30,11 +30,25 @@
     z-index: 5;
 }
 
+#acceuil_desktop, #contact, #boissons{
+    scroll-margin-top: 100px;
+}
+#jeux{
+    scroll-margin-top: 200px;
+}
+#contact, #formulaire,  .carte, footer, .img_acceuil{
+    font-family: "Poppins", sans-serif;
+}
+#mes_competences, #boissons{
+    font-family: system-ui, sans-serif;
+}
 /* -------------- BOISSONS ------------------ */
 #boissons_desktop > h1{
     text-align: center;
     padding-top: 100px;
     font-size: 2rem;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .cards_boissons > .cards{
     background-color: #ffffffb2;
@@ -176,7 +190,7 @@ url(./Ressources/client.jpg) no-repeat center/cover fixed;
     color: white
 }
 .carteBars > div > img{
-    max-width: 400px;
+    max-width: 350px;
     text-align: center;
 }
 .carteBars :first-child{
@@ -307,35 +321,8 @@ url(./Ressources/client.jpg) no-repeat center/cover fixed;
 
 /* PC */
 @media (min-width: 900px){
-    #acceuil_desktop{
+    #jeux{
         scroll-margin-top: 100px;
-    }
-    #A_propos_desktop{
-        scroll-margin-top: 150px;
-    }
-    #boissons_desktop{
-        scroll-margin-top: 200px;
-    }
-    #mes_competences_desktop{
-        scroll-margin-top: 100px;
-    }
-    #cv{
-        scroll-margin-top: 200px;
-    }
-    #contact, #formulaire,  .carte, footer, .img_acceuil{
-        font-family: "Poppins", sans-serif;
-    }
-    #mes_competences, #boissons{
-        font-family: system-ui, sans-serif;
-    }
-    .nav-container .checkbox{
-        left: 94%;
-    }
-    .nav-container .hamburger-lines{
-        left: 94%;
-    }
-    .none{
-        display: none;
     }
         .img_acceuil{
             background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
