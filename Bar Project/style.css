@@ -286,7 +286,7 @@ url(./Ressources/client.jpg) no-repeat center/cover fixed;
 @media (max-width:900px){
     
     .img_acceuil{
-        min-height: 100vh;
+        min-height: 120vh;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
         url('./Ressources/bar2.jpg') center/cover fixed;
         position: relative;
