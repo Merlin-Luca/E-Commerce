@@ -409,4 +409,12 @@ url(./Ressources/client.jpg) no-repeat center/cover fixed;
         }
         /* --------------- FIN SLIDERS -------------- */
     }
-    
+
+.theme{
+    position: fixed;
+    top: 10%;
+    left: 2%;
+}
+.theme > *{
+    margin-bottom: 10px;
+}
