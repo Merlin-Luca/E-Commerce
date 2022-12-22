@@ -324,8 +324,7 @@ url(./Ressources/client.jpg) no-repeat center/cover fixed;
         scroll-margin-top: 100px;
     }
         .img_acceuil{
-            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
-            url('././Ressources/bar2.jpg') no-repeat fixed;
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), no-repeat fixed;
             background-position: top 40% left 50%;
             background-size: 100%;
             background-color: #013328;

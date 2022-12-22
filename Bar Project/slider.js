@@ -69,6 +69,7 @@ export default function init(timing = 3000){
     startInterval();
 }
 function startInterval() {
+    clearInterval(intervalId)
     intervalId = setInterval(() => {
         changeItem({target: slider.btns[0]})
     }, time);

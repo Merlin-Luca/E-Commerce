@@ -24,10 +24,12 @@ function changeTheme()
     let section_text_2 = document.querySelector(".snd_texte")
     let section_text_3 = document.querySelector(".third_texte")
     let slide_h1 = document.querySelector(".slide")
+    let img_acceuil = document.querySelector(".img_acceuil")
 
     // BARS
     bars.addEventListener("click", ()=>
     {
+        img_acceuil.style.backgroundImage = "url('./Bar Project/Ressources/bar2.jpg')";
         h1_acceuil.textContent = "𝕷𝖊 𝕾𝖜𝖊𝖊𝖙𝖎𝖊 𝕸𝖆𝖑𝖊𝖓𝖙𝖎𝖓𝖊𝖘"
         h1_cards.textContent = "Découvrez nos cocktails du moment"
         cards_boissons.innerHTML =
@@ -54,12 +56,16 @@ function changeTheme()
             <br><p>Il fut nommé ainsi en l’honneur de la populaire ballade de Prince Purple Rain issu de son album du même nom.</p>
         </section>
       `
+      slide_h1.innerHTML = 
+        `
+        <h1>Vous trouverez aussi de quoi passer le temps ici :</h1>
+        `
         let slide = document.querySelector('.slide');
         async function addSlider(){
         const sliderJS = await import("./slider.js")
         const slider = sliderJS.create(bars_images);
         slide.append(slider);
-        // sliderJS.default();
+        sliderJS.default();
         }
         addSlider()
     })
@@ -67,12 +73,13 @@ function changeTheme()
     // IMMOBILIER
     immobilier.addEventListener("click", ()=>
     {
+        img_acceuil.style.backgroundImage = "url('./Bar Project/Ressources/client_immobilier.jpg')";
         h1_acceuil.textContent = "Immobilier"
         h1_cards.textContent = "Venez nous voirs en agence :"
         cards_boissons.innerHTML =
         `
         <div class="cards carte1">
-        <img class="first_image" src="./Bar Project/Ressources/client_immobilier.jpg">
+        <img class="first_image" src="./Bar Project/Ressources/client.webp">
         </div>
             <section class="first_texte">
                 <h1>Nous vous recevons directement :</h1>
@@ -102,7 +109,7 @@ function changeTheme()
         const sliderJS = await import("./slider.js")
         const slider = sliderJS.create(immobilier_images);
         slide.append(slider);
-        // sliderJS.default();
+        sliderJS.default();
         }
         addSlider()
     })
@@ -110,8 +117,9 @@ function changeTheme()
     // FASHION
     fashion.addEventListener("click", ()=>
     {
+        img_acceuil.style.backgroundImage = "url('./Bar Project/Ressources/vetement.webp')";
         h1_acceuil.textContent = "Fashion"
-        h1_cards.textContent = "Une selections de nos vetements :"
+        h1_cards.textContent = "Vous cherchez à remplir votre dressing ? Nous avons ce qu'il vus faut !"
         cards_boissons.innerHTML =
         `
         <div class="cards carte1">
@@ -123,7 +131,7 @@ function changeTheme()
             </section>
             <section class="snd_texte">
                 <h1>De quoi avoir la classe ?</h1>
-                <br><p>Nous disposons de ça aussi et son coin reserver pour pas de perte de temps.</p>
+                <br><p>Nous disposons de ça aussi et sont coin reserver pour pas de perte de temps.</p>
             </section>
             <div class="cards carte2">
                 <img class="snd_image" src="./Bar Project/Ressources/costume.jpg">
