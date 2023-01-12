@@ -177,9 +177,3 @@ function load(){
     }, 1000)
 }
 load()
-
-/*
-Il me faut 3 bouton, changer les style css, les images, les textes et hop 3 sites vitrine avec 1 code mdr
-
-Immobilier / Fashion
-*/
