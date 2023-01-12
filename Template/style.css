@@ -338,10 +338,11 @@ url(./Ressources/client.jpg) no-repeat center/cover fixed;
 @media (max-width:900px){
     .theme
     {
+        width: 100%;
         position: fixed;
         z-index: 15;
-        left: 45%;
-        top: 70%;
+        top: 65%;
+        text-align: center;
     }
     .theme > h3
     {
