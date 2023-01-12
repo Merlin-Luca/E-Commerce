@@ -341,7 +341,7 @@ url(./Ressources/client.jpg) no-repeat center/cover fixed;
         width: 100%;
         position: fixed;
         z-index: 15;
-        top: 500px;
+        top: 50px;
         text-align: center;
     }
     .theme > h3
