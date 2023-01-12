@@ -5,18 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./Bar Project/style.css">
-    <script src="./Bar Project/script.js" defer></script>
+    <link rel="stylesheet" href="./Template/style.css">
+    <script src="./Template/script.js" defer></script>
 </head>
 <body>
+
+<!-- LOADER -->
+  <div class="loader">
+      <div id="loader">
+        <div class="cercle">
+          <div class="circle"></div>
+        </div>
+      </div>
+  </div>
 
 <!-- --------------------------------------------- -->
 <!-- ------------ CHANGER LE THEME --------------- -->
 <!-- --------------------------------------------- -->
 <div class="theme">
-  <button class="bars">Bars</button>
-  <button class="immobilier">Immobilier</button>
-  <button class="fashion">Fashion</button>
+  <h3>Changer de themes :
+    <ul>
+      <li><button class="bars">Bars</button></li>
+      <li><button class="immobilier">Immobilier</button></li>
+      <li><button class="fashion">Fashion</button></li>
+    </ul>
+  </h3>
 </div>
 
 <!-- --------------------------------------------- -->
@@ -26,11 +39,12 @@
       
       <div class="select-div-bar">
         <select class="select_nav"  onchange="location = this.value;">
-            <option value="#acceuil_desktop">Acceuil</option>
-            <option value="#boissons">Nos Verres</option>
-            <option value="#jeux">Nos Jeux</option>
-            <option value="#contact"><a href="">Nos Contacts</a></option>
-            <option value="#cartes">Nos Bars</option>
+            <option value="./">Compétences</option>
+            <option value="#acceuil_desktop">Images de font :</option>
+            <option value="#boissons">Grid :</option>
+            <option value="#jeux">Sliders : </option>
+            <option value="#contact"><a href="">Formulaire :</a></option>
+            <option value="#cartes">Pied de page :</option>
         </select>
       </div>
       
@@ -50,7 +64,7 @@
   <h1 class="h1_cards">Découvrez nos cocktails du moment</h1>
   <div id="boissons" class="cards_boissons">
       <div class="cards carte1">
-        <img class="first_image" src="./Bar Project/Ressources/curaco.webp">
+        <img class="first_image" src="./Template/Ressources/curaco.webp">
       </div>
       <section class="first_texte">
         <h1>Le Blue Lagoon :</h1>
@@ -61,10 +75,10 @@
         <br><p> Selon certaines sources, il s’agirait de la fameuse reine d'Angleterre, Marie Tudor, dont le règne a été marqué par une grande cruauté et de nombreux opposants brûlés au bûcher.</p>
       </section>
       <div class="cards carte2">
-        <img class="snd_image" src="./Bar Project/Ressources/bloody-mary.jpg">
+        <img class="snd_image" src="./Template/Ressources/bloody-mary.jpg">
       </div>
       <div class="cards carte3">
-            <img class="third_image" src="./Bar Project/Ressources/purple.jpeg">
+            <img class="third_image" src="./Template/Ressources/purple.jpeg">
       </div>
       <section class="third_texte">
         <h1>Le Purple Rain : </h1>
@@ -126,12 +140,9 @@
         Vous pouvez nous trouver ici aussi :<br><br></p>
       </div>
       <div>
-        <img src="./Bar Project/Ressources/carte_fr.jpg" alt="" srcset="">
+        <img src="./Template/Ressources/carte_fr.jpg" alt="" srcset="">
       </div>
     </div>
   </footer>
-  <div>
-    
-  </div>
 </body>
 </html>

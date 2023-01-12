@@ -4,30 +4,82 @@
     padding: 0;
     text-decoration: none;
 }
+
+/* loader */
+.loader{
+    font-size: 5rem;
+    z-index: 20;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cercle{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    position: fixed;
+    width: 250px; 
+    height: 250px;
+    border-radius: 50%;
+    border: 7px solid transparent;
+    border-top-color: red;
+    animation: spin 2s linear infinite;
+}
+.circle::before, .circle::after{
+    content: "";
+    position: fixed;
+    border-radius: 50%;
+    border: 7px solid transparent;
+}
+.circle::before{
+    top: 7px;
+    left: 7px;
+    bottom: 7px;
+    right: 7px;
+    border-top-color: crimson;
+    animation: spin 3s linear infinite;
+}
+.circle::after{
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    border-top-color: pink;
+    animation: spin 1.5s linear infinite;
+}
+#loader{
+    display: flex;
+    flex-direction: column;
+}
+@keyframes loader {
+    100%{
+        transform: translateY(-30px);
+    }
+}
+@keyframes spin {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* FIN */
+
 .img_acceuil > h1{
     animation-name: h1;
     position: absolute;
     color: whitesmoke;
     text-shadow: 2px 0 rgb(0, 0, 0), -2px 0 rgb(5, 5, 5), 0 2px rgb(0, 0, 0), 0 -2px rgb(255, 255, 255),
     1px 1px rgb(3, 3, 3), -1px -1px rgb(0, 0, 0), 1px -1px rgb(243, 243, 243), -1px 1px rgb(3, 3, 3);
-}
-.select-div-bar{
-    position: absolute;
-}
-
-.select_nav{
-    cursor: pointer;
-    text-align: center;
-    background-color: #32152b;
-    color: white;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 30px;
-    padding: 10px;
-    font-size: 1.3rem;
-    position: fixed;
-    transform: translate(0, 10%);
-    z-index: 5;
 }
 
 #acceuil_desktop, #contact, #boissons{
@@ -284,11 +336,46 @@ url(./Ressources/client.jpg) no-repeat center/cover fixed;
 
 /* mobile */
 @media (max-width:900px){
-    
+    .theme
+    {
+        position: fixed;
+        z-index: 15;
+        left: 45%;
+        top: 75%;
+    }
+    .theme > h3
+    {
+        margin-bottom: 10px;
+        margin: 5px;
+        padding: 8px;
+        background-color: #32152b;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+    .theme > h3 > ul > li > button
+    {
+        width: 100%;
+        margin: 5px 0px 5px 0px;
+        padding: 8px;
+        background-color: #32152b;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .theme > h3 > ul > li > button:hover
+    {
+        background-color: white;
+        color: #32152b;
+        border: 1px solid #32152b;
+    }
+    .loader{
+        display: none;
+    }
     .img_acceuil{
         min-height: 120vh;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-        url('./Ressources/bar2.jpg') center/cover fixed;
+        background: url('./Ressources/bar2.jpg') center/cover fixed no-repeat;
         position: relative;
         overflow-x: hidden;
         margin-top: -220px;
@@ -319,101 +406,132 @@ url(./Ressources/client.jpg) no-repeat center/cover fixed;
 
 
 /* PC */
-@media (min-width: 900px){
-    #jeux{
-        scroll-margin-top: 100px;
+@media (min-width: 900px)
+{
+    .select-div-bar
+    {
+        position: absolute;
     }
-        .img_acceuil{
-            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), no-repeat fixed;
-            background-position: top 40% left 50%;
-            background-size: 100%;
-            background-color: #013328;
-            min-height: 1000px;
-        }
-        .img_acceuil>h1{
-            animation-duration: 5s;
-            left: 45%;
-            top: 28%;
-            font-size: 8rem;
-        }
-        @keyframes h1 {
-            from {
-                opacity: 0.5;
-                transform: translateY(-175%);
-            }
-            to{transform: translateY(0%);}
-        }
-        /* -------------- BOISSONS ------------------ */
-        #boissons_desktop > h1{
-            font-size: 3rem;
-        }
-        .cards_boissons{
-            grid-template-areas: 
-            "image1 texte1 texte1"
-            "texte2 texte2 image2"
-            "image3 texte3 texte3";
-            margin: 0px 250px 0px 250px;
-            padding: 90px 0 90px 0;
-        }
-        /* CARDS */
-        .cards_boissons > .cards{
-            max-width: 350px;
-            min-width: 250px;
-            min-height: 350px;
-            max-height: 320px;
-        }
-        .cards_boissons > section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            font-size: 1.5rem;
-        }
-        .cards_boissons > section > h1 {
-            margin-bottom: 20px;
-            text-decoration: underline;
-        }
-        /* -------------- FIN BOISSONS ------------------ */
-        /* -------------- FORMULAIRE ------------------ */
-        
-        #formulaire > div{
-            margin: 0 300px 0 300px;
-            padding: 50px 0 80px 0;
-        }
-        #formulaire > div > *{
-            width: 450px;
-        }
-        /* ------------ FIN FORMULAIRE ---------------- */
-        /* -------------- CARTE BARS ------------------ */
-        .carteBars{
-            height: 700px; display: flex; text-align: center; justify-content: center; align-items: center; border-top: 5px solid black;
-            background-color: #32152b;
-            color: white;
-        }
-        .carteBars > div > img{
-            max-width: 75%;
-        }
-        .carteBars :first-child{
-            width: 100%;
-            font-size: 1.7rem;
-        }
-        /* ------------ FIN CARTE BARS ---------------- */
-        /* --------------- DÉBUT SLIDERS -------------- */
-        .slide{
-            margin: 50px;
-        }
-        .slider-container {
-            width: 60vw;
-            margin: auto;
-        }
-        /* --------------- FIN SLIDERS -------------- */
+    
+    .select_nav
+    {
+        cursor: pointer;
+        text-align: center;
+        background-color: #32152b;
+        color: white;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-left: 30px;
+        padding: 10px;
+        font-size: 1.3rem;
+        position: fixed;
+        transform: translate(0, 10%);
+        z-index: 5;
     }
 
-.theme{
-    position: fixed;
-    top: 10%;
-    left: 2%;
-}
-.theme > *{
-    margin-bottom: 10px;
+    #jeux
+    {
+        scroll-margin-top: 100px;
+    }
+    .img_acceuil
+    {
+        background-image: url(./Ressources/bar2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-color: #013328;
+        min-height: 1000px;
+    }
+    .img_acceuil>h1
+    {
+        animation-duration: 5s;
+        left: 45%;
+        top: 28%;
+        font-size: 8rem;
+    }
+    @keyframes h1 
+    {
+        from 
+        {
+            opacity: 0.5;
+            transform: translateY(-175%);
+        }
+        to{transform: translateY(0%);}
+    }
+    /* -------------- BOISSONS ------------------ */
+    #boissons_desktop > h1
+    {
+        font-size: 3rem;
+    }
+    .cards_boissons
+    {
+        grid-template-areas: 
+        "image1 texte1 texte1"
+        "texte2 texte2 image2"
+        "image3 texte3 texte3";
+        margin: 0px 250px 0px 250px;
+        padding: 90px 0 90px 0;
+    }
+    /* CARDS */
+    .cards_boissons > .cards
+    {
+        max-width: 350px;
+        min-width: 250px;
+        min-height: 350px;
+        max-height: 320px;
+    }
+    .cards_boissons > section 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+    .cards_boissons > section > h1 
+    {
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+    /* -------------- FIN BOISSONS ------------------ */
+    /* -------------- FORMULAIRE ------------------ */
+    
+    #formulaire > div
+    {
+        margin: 0 300px 0 300px;
+        padding: 50px 0 80px 0;
+    }
+    #formulaire > div > *
+    {
+        width: 450px;
+    }
+    /* ------------ FIN FORMULAIRE ---------------- */
+    /* -------------- CARTE BARS ------------------ */
+    .carteBars
+    {
+        height: 700px; display: flex; text-align: center; justify-content: center; align-items: center; border-top: 5px solid black;
+        background-color: #32152b;
+        color: white;
+    }
+    .carteBars > div > img
+    {
+        max-width: 75%;
+    }
+    .carteBars :first-child
+    {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+    /* ------------ FIN CARTE BARS ---------------- */
+    /* --------------- DÉBUT SLIDERS -------------- */
+    .slide
+    {
+        margin: 50px;
+    }
+    .slider-container 
+    {
+        width: 60vw;
+        margin: auto;
+    }
+    /* --------------- FIN SLIDERS -------------- */
 }
