@@ -20,11 +20,9 @@ function changeTheme()
     let h1_acceuil = document.querySelector(".h1_acceuil")
     let h1_cards = document.querySelector(".h1_cards")
     let cards_boissons = document.querySelector(".cards_boissons")
-    let section_text_1 = document.querySelector(".first_texte")
-    let section_text_2 = document.querySelector(".snd_texte")
-    let section_text_3 = document.querySelector(".third_texte")
     let slide_h1 = document.querySelector(".slide")
     let img_acceuil = document.querySelector(".img_acceuil")
+    let formulaire = document.getElementById('formulaire_container')
 
     // BARS
     bars.addEventListener("click", ()=>
@@ -32,6 +30,8 @@ function changeTheme()
         img_acceuil.style.backgroundImage = "url('./Template/Ressources/bar2.jpg')";
         img_acceuil.style.backgroundSize = "cover"
         img_acceuil.style.backgroundPosition = ""
+        formulaire.classList.add('formulaire_container_bars')
+        formulaire.classList.remove('formulaire_container_fashion', 'formulaire_container_immobilier')
         h1_acceuil.textContent = "𝕷𝖊 𝕾𝖜𝖊𝖊𝖙𝖎𝖊 𝕸𝖆𝖑𝖊𝖓𝖙𝖎𝖓𝖊𝖘"
         h1_cards.textContent = "Découvrez nos cocktails du moment"
         cards_boissons.innerHTML =
@@ -78,6 +78,8 @@ function changeTheme()
         img_acceuil.style.background = "url('./Template/Ressources/client_immobilier.jpg')";
         img_acceuil.style.backgroundSize = "cover"
         img_acceuil.style.backgroundPosition = "25%"
+        formulaire.classList.add('formulaire_container_immobilier')
+        formulaire.classList.remove('formulaire_container_fashion', 'formulaire_container_bars')
         h1_acceuil.textContent = "Immobilier"
         h1_cards.textContent = "Venez nous voirs en agence :"
         cards_boissons.innerHTML =
@@ -124,6 +126,8 @@ function changeTheme()
         img_acceuil.style.backgroundImage = "url('./Template/Ressources/vetement.webp')";
         img_acceuil.style.backgroundSize = "cover"
         img_acceuil.style.backgroundPosition = ""
+        formulaire.classList.add('formulaire_container_fashion')
+        formulaire.classList.remove('formulaire_container_bars', 'formulaire_container_immobilier')
         h1_acceuil.textContent = "Fashion"
         h1_cards.textContent = "Nous avons ce qu'il vous faut :"
         cards_boissons.innerHTML =
