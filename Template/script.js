@@ -135,16 +135,16 @@ function changeTheme()
         h1_cards.textContent = "Nous avons ce qu'il vous faut :"
         cards_boissons.innerHTML =
         `
-        <div class="cards carte1">
-        <img class="first_image" src="./Template/Ressources/jeans.jpg">
-        </div>
+            <div class="cards carte1">
+            <img class="first_image" src="./Template/Ressources/jeans.jpg">
+            </div>
             <section class="first_texte">
                 <h1>Du classiques</h1>
                 <br><p>Des jeans, chemises, pulls, (...)</p>
             </section>
             <section class="snd_texte">
                 <h1>De quoi avoir la classe ?</h1>
-                <br><p>Nous avons un coin réservé pour aucune de perte de temps..</p>
+                <br><p>Nous avons un coin réservé pour aucune de perte de temps.</p>
             </section>
             <div class="cards carte2">
                 <img class="snd_image" src="./Template/Ressources/costume.jpg">
@@ -177,10 +177,10 @@ let loaderScreen = document.querySelector(".loader")
 let page = document.querySelector(".page")
 
 function load(){
-        setTimeout(()=>{
-        loaderScreen.style.transition = "opacity 0.2s, height 1s";
-        loaderScreen.style.opacity = "0";
-        loaderScreen.style.height = "0";
+    setTimeout(()=>{
+    loaderScreen.style.transition = "opacity 0.2s, height 1s";
+    loaderScreen.style.opacity = "0";
+    loaderScreen.style.height = "0";
     }, 1000)
 }
 load()
