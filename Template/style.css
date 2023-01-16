@@ -353,7 +353,8 @@
         width: 25%;
         position: fixed;
         z-index: 15;
-        top: 70%;
+        top: 35rem;
+        bottom: 30%;
         left: 72%;
         text-align: center;
     }
