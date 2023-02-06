@@ -30,7 +30,7 @@ function changeTheme()
         img_acceuil.style.backgroundImage = "url('./Template/Ressources/bar2.jpg')";
         img_acceuil.style.backgroundSize = "cover"
         img_acceuil.style.backgroundPosition = ""
-        img_acceuil.style.backgroundAttachment = "fixed"
+        img_acceuil.style.backgroundAttachment = "scroll"
         formulaire.classList.add('formulaire_container_bars')
         formulaire.classList.remove('formulaire_container_fashion', 'formulaire_container_immobilier')
         h1_acceuil.textContent = "𝕷𝖊 𝕾𝖜𝖊𝖊𝖙𝖎𝖊 𝕸𝖆𝖑𝖊𝖓𝖙𝖎𝖓𝖊𝖘"
@@ -79,7 +79,7 @@ function changeTheme()
         img_acceuil.style.background = "url('./Template/Ressources/client_immobilier.jpg')";
         img_acceuil.style.backgroundSize = "cover"
         img_acceuil.style.backgroundPosition = "25%"
-        img_acceuil.style.backgroundAttachment = "fixed"
+        img_acceuil.style.backgroundAttachment = "scroll"
         formulaire.classList.add('formulaire_container_immobilier')
         formulaire.classList.remove('formulaire_container_fashion', 'formulaire_container_bars')
         h1_acceuil.textContent = "Immobilier"
@@ -128,7 +128,7 @@ function changeTheme()
         img_acceuil.style.backgroundImage = "url('./Template/Ressources/vetement.webp')";
         img_acceuil.style.backgroundSize = "cover"
         img_acceuil.style.backgroundPosition = ""
-        img_acceuil.style.backgroundAttachment = "fixed"
+        img_acceuil.style.backgroundAttachment = "scroll"
         formulaire.classList.add('formulaire_container_fashion')
         formulaire.classList.remove('formulaire_container_bars', 'formulaire_container_immobilier')
         h1_acceuil.textContent = "Fashion"
