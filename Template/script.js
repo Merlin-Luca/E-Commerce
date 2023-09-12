@@ -17,24 +17,24 @@ function changeTheme()
     let bars = document.querySelector(".bars")
     let immobilier = document.querySelector(".immobilier")
     let fashion = document.querySelector(".fashion")
-    let h1_acceuil = document.querySelector(".h1_acceuil")
-    let h1_cards = document.querySelector(".h1_cards")
+    let h1_accueil = document.querySelector(".h1_accueil")
     let cards_boissons = document.querySelector(".cards_boissons")
     let slide_h1 = document.querySelector(".slide")
-    let img_acceuil = document.querySelector(".img_acceuil")
+    let img_accueil = document.querySelector(".img_accueil")
     let formulaire = document.getElementById('formulaire_container')
+    let ardoise = document.querySelector(".ardoise")
 
     // BARS
     bars.addEventListener("click", ()=>
     {
-        img_acceuil.style.backgroundImage = "url('./Template/Ressources/bar2.jpg')";
-        img_acceuil.style.backgroundSize = "cover"
-        img_acceuil.style.backgroundPosition = ""
-        img_acceuil.style.backgroundAttachment = "scroll"
+        img_accueil.style.backgroundImage = "url('./Template/Ressources/bar2.jpg')";
+        img_accueil.style.backgroundSize = "cover"
+        img_accueil.style.backgroundPosition = ""
+        img_accueil.style.backgroundAttachment = "scroll"
+        ardoise.style.backgroundColor = "rgb(37, 29, 23)"
         formulaire.classList.add('formulaire_container_bars')
         formulaire.classList.remove('formulaire_container_fashion', 'formulaire_container_immobilier')
-        h1_acceuil.textContent = "𝕷𝖊 𝕾𝖜𝖊𝖊𝖙𝖎𝖊 𝕸𝖆𝖑𝖊𝖓𝖙𝖎𝖓𝖊𝖘"
-        h1_cards.textContent = "Découvrez nos cocktails du moment"
+        h1_accueil.textContent = "𝕷𝖊 𝕾𝖜𝖊𝖊𝖙𝖎𝖊 𝕸𝖆𝖑𝖊𝖓𝖙𝖎𝖓𝖊𝖘"
         cards_boissons.innerHTML =
         `
         <div class="cards carte1">
@@ -42,11 +42,11 @@ function changeTheme()
         </div>
         <section class="first_texte">
             <h1>Le Blue Lagoon :</h1>
-            <br><p> Difficile de ne pas reconnaître le cocktail Blue Lagoon avec sa couleur bleu vif. Cette boisson azuréenne se retrouve aussi sur le nom français Lagon Bleu</p>
+            <p> Difficile de ne pas reconnaître le cocktail Blue Lagoon  avec sa couleur bleu vif. Cette boisson azuréenne se  retrouve aussi sur le nom français Lagon Bleu.</p>
         </section>
         <section class="snd_texte">
             <h1>Le Bloody Mary : </h1>
-            <br><p> Selon certaines sources, il s'agirait de la fameuse reine d'Angleterre, Marie Tudor, dont le règne a été marqué par une grande cruauté et de nombreux opposants brûlés au bûcher.</p>
+            <p> Selon certaines sources, il s'agirait de la fameuse reine  d'Angleterre, Marie Tudor, dont le règne a été marqué  par une grande cruauté et de nombreux opposants brûlés  au bûcher.</p>
         </section>
         <div class="cards carte2">
             <img class="snd_image" src="./Template/Ressources/bloody-mary.jpg">
@@ -56,7 +56,7 @@ function changeTheme()
         </div>
         <section class="third_texte">
             <h1>Le Purple Rain : </h1>
-            <br><p>Il fut nommé ainsi en l'honneur de la populaire ballade de Prince Purple Rain issu de son album du même nom.</p>
+            <p>Il fut nommé ainsi en l'honneur de la populaire ballade  de Prince Purple Rain issu de son album du même nom.</p>
         </section>
       `
       slide_h1.innerHTML = 
@@ -76,26 +76,26 @@ function changeTheme()
     // IMMOBILIER
     immobilier.addEventListener("click", ()=>
     {
-        img_acceuil.style.background = "url('./Template/Ressources/client_immobilier.jpg')";
-        img_acceuil.style.backgroundSize = "cover"
-        img_acceuil.style.backgroundPosition = "25%"
-        img_acceuil.style.backgroundAttachment = "scroll"
+        img_accueil.style.background = "url('./Template/Ressources/client_immobilier.jpg')";
+        img_accueil.style.backgroundSize = "cover"
+        img_accueil.style.backgroundPosition = "25%"
+        img_accueil.style.backgroundAttachment = "scroll"
+        ardoise.style.backgroundColor = "rgb(180, 176, 173)"
         formulaire.classList.add('formulaire_container_immobilier')
         formulaire.classList.remove('formulaire_container_fashion', 'formulaire_container_bars')
-        h1_acceuil.textContent = "Immobilier"
-        h1_cards.textContent = "Venez nous voirs en agence :"
+        h1_accueil.textContent = "Immobilier Fontaine"
         cards_boissons.innerHTML =
         `
         <div class="cards carte1">
         <img class="first_image" src="./Template/Ressources/client.webp">
         </div>
             <section class="first_texte">
-                <h1>Nous vous recevons directement :</h1>
-                <br><p>Présentez-nous votre projet et vos divers souhaits pour votre future vie</p>
+                <h1>Sans rendez-vous :</h1>
+                <p>Présentez-nous votre projet et vos divers  souhaits pour votre future vie.</p>
             </section>
             <section class="snd_texte">
-                <h1>Vous souhaiter visiter ? : </h1>
-                <br><p>Selon vos disponibilités nous pourrons y être le jour même.</p>
+                <h1>Un bien vous plait ?</h1>
+                <p>Selon vos disponibilités nous pourrons  visiter le bien sous quelques jours.</p>
             </section>
             <div class="cards carte2">
                 <img class="snd_image" src="./Template/Ressources/visite.jpg">
@@ -105,7 +105,7 @@ function changeTheme()
             </div>
             <section class="third_texte">
                 <h1>Vous en souhaiter les clés ? </h1>
-                <br><p>Avec quelque signature et accord il peut être à vous en moins d'une semaine.</p>
+                <p>Dès votre signature, notre équipe s'occupera  de l'intégralité  des dossiers et démarches afin  de conclure l'achat dans les plus brefs délais.</p>
             </section>
         `
         slide_h1.innerHTML = 
@@ -125,26 +125,27 @@ function changeTheme()
     // FASHION
     fashion.addEventListener("click", ()=>
     {
-        img_acceuil.style.backgroundImage = "url('./Template/Ressources/vetement.webp')";
-        img_acceuil.style.backgroundSize = "cover"
-        img_acceuil.style.backgroundPosition = ""
-        img_acceuil.style.backgroundAttachment = "scroll"
+        img_accueil.style.backgroundImage = "url('./Template/Ressources/vetement.webp')";
+        img_accueil.style.backgroundSize = "cover"
+        img_accueil.style.backgroundPosition = ""
+        img_accueil.style.backgroundAttachment = "scroll"
+        ardoise.style.backgroundColor = "rgb(26, 70, 95)"
         formulaire.classList.add('formulaire_container_fashion')
         formulaire.classList.remove('formulaire_container_bars', 'formulaire_container_immobilier')
-        h1_acceuil.textContent = "Fashion"
-        h1_cards.textContent = "Nous avons ce qu'il vous faut :"
+        h1_accueil.textContent = "Crystal Modes"
         cards_boissons.innerHTML =
         `
             <div class="cards carte1">
             <img class="first_image" src="./Template/Ressources/jeans.jpg">
             </div>
             <section class="first_texte">
-                <h1>Du classiques</h1>
-                <br><p>Des jeans, chemises, pulls, (...)</p>
+                <h1>Du classique</h1>
+                <p>Retrouver dans nos magasins  de quoi fournir l'intégralité de votre dressing ! 
+                Des jeans, chemises, pulls, et bien plus encore.</p>
             </section>
             <section class="snd_texte">
-                <h1>De quoi avoir la classe ?</h1>
-                <br><p>Nous avons un coin réservé pour aucune de perte de temps.</p>
+                <h1>Des vêtements classes</h1>
+                <p>Nous avons un coin réservé aux tenues de mariage. Divers ajustement sont disponibles sur place pour les tenues et chaussures.</p>
             </section>
             <div class="cards carte2">
                 <img class="snd_image" src="./Template/Ressources/costume.jpg">
@@ -153,8 +154,8 @@ function changeTheme()
                     <img class="third_image" src="./Template/Ressources/style.jpg">
             </div>
             <section class="third_texte">
-                <h1>Trouver votre style chez nous</h1>
-                <br><p>Nous avons des locaux pour vous recevoir et concevoir un projet avec vous</p>
+                <h1>Liberez votre style</h1>
+                <p>Venez rencontrer notre équipe dédiée au relooking,  prenez contact pour démarrer un projet ensemble.</p>
             </section>
         `
         slide_h1.innerHTML = 
