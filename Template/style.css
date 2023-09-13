@@ -86,7 +86,7 @@
 #accueil_desktop, #contact, #boissons{
     scroll-margin-top: 100px;
 }
-#jeux{
+#slide{
     scroll-margin-top: 200px;
 }
 
@@ -197,6 +197,9 @@ footer, #contact, #mes_competences, #boissons{
 .contact > h1 {
     font-size: 25px;
     margin-bottom: 10px;
+}
+.contact > input, textarea{
+    padding: 5px;
 }
 #formulaire{
     display: flex;
@@ -463,7 +466,7 @@ footer, #contact, #mes_competences, #boissons{
         z-index: 5;
     }
 
-    #jeux
+    #slide
     {
         scroll-margin-top: 100px;
     }
@@ -617,7 +620,7 @@ footer, #contact, #mes_competences, #boissons{
         z-index: 5;
     }
 
-    #jeux
+    #slide
     {
         scroll-margin-top: 100px;
     }
