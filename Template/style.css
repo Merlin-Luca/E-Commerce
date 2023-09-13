@@ -629,7 +629,7 @@ footer, #contact, #mes_competences, #boissons{
         background-attachment: scroll;
         background-repeat: no-repeat;
         background-color: #013328;
-        height: 100vh;
+        height: 98vh;
     }
     .img_accueil>h1
     {
@@ -661,17 +661,15 @@ footer, #contact, #mes_competences, #boissons{
         "image1 texte1 texte1"
         "texte2 texte2 image2"
         "image3 texte3 texte3";
-        margin: 0px 250px 0px 250px;
-        padding: 90px 0 90px 0;
         max-width: 60%;
     }
     /* CARDS */
     .cards_boissons > .cards
     {
-        max-width: 350px;
+        max-width: 250px;
         min-width: 250px;
-        min-height: 350px;
-        max-height: 320px;
+        min-height: 250px;
+        max-height: 250px;
     }
     .cards_boissons > section 
     {
@@ -679,7 +677,7 @@ footer, #contact, #mes_competences, #boissons{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .cards_boissons > section > h1 
     {

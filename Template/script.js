@@ -41,11 +41,11 @@ function changeTheme()
         <img class="first_image" src="./Template/Ressources/curaco.webp">
         </div>
         <section class="first_texte">
-            <h1>Le Blue Lagoon :</h1>
+            <h1>Le Blue Lagoon</h1>
             <p> Difficile de ne pas reconnaître le cocktail Blue Lagoon  avec sa couleur bleu vif. Cette boisson azuréenne se  retrouve aussi sur le nom français Lagon Bleu.</p>
         </section>
         <section class="snd_texte">
-            <h1>Le Bloody Mary : </h1>
+            <h1>Le Bloody Mary</h1>
             <p> Selon certaines sources, il s'agirait de la fameuse reine  d'Angleterre, Marie Tudor, dont le règne a été marqué  par une grande cruauté et de nombreux opposants brûlés  au bûcher.</p>
         </section>
         <div class="cards carte2">
@@ -55,13 +55,13 @@ function changeTheme()
                 <img class="third_image" src="./Template/Ressources/purple.jpeg">
         </div>
         <section class="third_texte">
-            <h1>Le Purple Rain : </h1>
+            <h1>Le Purple Rain</h1>
             <p>Il fut nommé ainsi en l'honneur de la populaire ballade  de Prince Purple Rain issu de son album du même nom.</p>
         </section>
       `
       slide_h1.innerHTML = 
         `
-        <h1>Vous trouverez aussi de quoi passer le temps ici :</h1>
+        <h1>Vous trouverez aussi de quoi passer le temps ici</h1>
         `
         let slide = document.querySelector('.slide');
         async function addSlider(){
@@ -90,11 +90,11 @@ function changeTheme()
         <img class="first_image" src="./Template/Ressources/client.webp">
         </div>
             <section class="first_texte">
-                <h1>Sans rendez-vous :</h1>
+                <h1>Sans rendez-vous</h1>
                 <p>Présentez-nous votre projet et vos divers  souhaits pour votre future vie.</p>
             </section>
             <section class="snd_texte">
-                <h1>Un bien vous plait ?</h1>
+                <h1>Un bien vous plaît ?</h1>
                 <p>Selon vos disponibilités nous pourrons  visiter le bien sous quelques jours.</p>
             </section>
             <div class="cards carte2">
@@ -104,13 +104,13 @@ function changeTheme()
                     <img class="third_image" src="./Template/Ressources/signature.jpg">
             </div>
             <section class="third_texte">
-                <h1>Vous en souhaiter les clés ? </h1>
+                <h1>Vous en souhaiter les clés ?</h1>
                 <p>Dès votre signature, notre équipe s'occupera  de l'intégralité  des dossiers et démarches afin  de conclure l'achat dans les plus brefs délais.</p>
             </section>
         `
         slide_h1.innerHTML = 
         `
-        <h1>Trouvez la maison de vos reves :</h1>
+        <h1>Trouvez la maison de vos reves</h1>
         `
         let slide = document.querySelector('.slide');
         async function addSlider(){
@@ -144,7 +144,7 @@ function changeTheme()
                 Des jeans, chemises, pulls, et bien plus encore.</p>
             </section>
             <section class="snd_texte">
-                <h1>Des vêtements classes</h1>
+                <h1>Pour les grandes occassions</h1>
                 <p>Nous avons un coin réservé aux tenues de mariage. Divers ajustement sont disponibles sur place pour les tenues et chaussures.</p>
             </section>
             <div class="cards carte2">
@@ -160,7 +160,7 @@ function changeTheme()
         `
         slide_h1.innerHTML = 
         `
-        <h1>Voici nos boutiques :</h1>
+        <h1>Un aperçu de l'un de nos magasins</h1>
         `
         let slide = document.querySelector('.slide');
         async function addSlider(){
