@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 /* loader */
@@ -94,7 +95,7 @@ footer, #contact, #mes_competences, #boissons{
 }
 /* -------------- BOISSONS ------------------ */
 .cards_boissons{
-    padding: 30px;
+    padding: 80px 0;
 }
 .cards_boissons > .cards{
     background-color: #ffffffb2;
@@ -104,10 +105,10 @@ footer, #contact, #mes_competences, #boissons{
     aspect-ratio: 2/1;
     border-radius: 1%;
     transition: background-color 1s ease-out, color 1s, box-shadow 1s ease-out;
-    max-width: 200px;
-    min-width: 200px;
-    min-height: 200px;
-    max-height: 200px;
+    max-width: 220px;
+    min-width: 220px;
+    min-height: 220px;
+    max-height: 220px;
 }
 .cards_boissons > .cards:first-child{
     margin-top: 0;
@@ -162,17 +163,9 @@ footer, #contact, #mes_competences, #boissons{
 .third_texte{
     grid-area: texte3;
 }
-#cartes{
-    margin: 25px;
-}
-#cartes > *{
-    text-align: center;
-}
 .cards_boissons > section > h1 {
     margin-bottom: 10px;
 }
-
-
 .first_texte, .snd_texte, .third_texte{
     margin-left: 50px;
     margin-right: 50px;
@@ -260,7 +253,7 @@ footer, #contact, #mes_competences, #boissons{
 
 /* --------------- DÉBUT SLIDERS -------------- */
 .slide{
-    margin: 0px;
+    
 }
 
 .slide h1{
@@ -274,12 +267,13 @@ footer, #contact, #mes_competences, #boissons{
     aspect-ratio: 16/9;
     position: relative;
     margin-bottom: 50px;
+    max-width: 80vh;
 }
 
 .slider-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .slider-container .items {
@@ -357,8 +351,8 @@ footer, #contact, #mes_competences, #boissons{
         margin: 5px;
         padding: 8px;
         background-color: rgb(15, 15, 15);
-        color: white;
-        border: 2px solid white;
+        color: rgb(211, 211, 211);
+        border: 2px solid rgb(211, 211, 211);
         border-radius: 5px;
     }
     .theme > h3 > ul > li > button
@@ -366,8 +360,8 @@ footer, #contact, #mes_competences, #boissons{
         width: 100%;
         margin: 5px 0px 5px 0px;
         padding: 8px;
-        color: white;
-        border: 1px solid white;
+        color: rgb(211, 211, 211);
+        border: 1px solid rgb(211, 211, 211);
         border-radius: 5px;
         cursor: pointer;
     }
@@ -379,16 +373,19 @@ footer, #contact, #mes_competences, #boissons{
     }
     .theme > h3 > ul > li > button:hover
     {
-        background-color: white;
+        background-color: rgb(211, 211, 211);
         color: rgb(37, 29, 23);
         border: 1px solid rgb(37, 29, 23);
+    }
+    .cards_boissons > section > p {
+        padding: 10px 75px;
     }
     .loader{
         display: none;
     }
     .img_accueil{
         min-height: 120vh;
-        background: url('./Ressources/bar2.jpg') center/cover scroll no-repeat;
+        background: url('./Ressources/bar2.jpg') 55%/cover scroll no-repeat;
         position: relative;
         overflow-x: hidden;
         margin-top: -220px;
@@ -424,8 +421,8 @@ footer, #contact, #mes_competences, #boissons{
         margin: 5px;
         padding: 8px;
         background-color: rgb(15, 15, 15);
-        color: white;
-        border: 2px solid white;
+        color: rgb(211, 211, 211);
+        border: 2px solid rgb(211, 211, 211);
         border-radius: 5px;
     }
     .theme > h3 > ul > li > button
@@ -434,14 +431,14 @@ footer, #contact, #mes_competences, #boissons{
         margin: 5px 0px 5px 0px;
         padding: 8px;
         background-color: rgb(39, 41, 37);
-        color: white;
-        border: 1px solid white;
+        color: rgb(211, 211, 211);
+        border: 1px solid rgb(211, 211, 211);
         border-radius: 5px;
         cursor: pointer;
     }
     .theme > h3 > ul > li > button:hover
     {
-        background-color: white;
+        background-color: rgb(211, 211, 211);
         color: rgb(37, 29, 23);
         border: 1px solid rgb(37, 29, 23);
     }
@@ -511,7 +508,7 @@ footer, #contact, #mes_competences, #boissons{
         "image3 texte3 texte3";
         margin: 0px;
         padding: 90px 0 90px 0;
-        max-width: 80%;
+        max-width: 70%;
     }
     /* CARDS */
     .cards_boissons > .cards
@@ -542,11 +539,11 @@ footer, #contact, #mes_competences, #boissons{
     
     #formulaire > div
     {
-        width: 35%;
+        width: 65%;
     }
     #formulaire > div > *
     {
-        width: 55%;
+        width: 70%;
     }
     /* ------------ FIN FORMULAIRE ---------------- */
     /* --------------- DÉBUT SLIDERS -------------- */
@@ -556,7 +553,7 @@ footer, #contact, #mes_competences, #boissons{
     }
     .slider-container 
     {
-        width: 60vw;
+        width: 100%;
         margin: auto;
     }
     /* --------------- FIN SLIDERS -------------- */
@@ -578,8 +575,8 @@ footer, #contact, #mes_competences, #boissons{
         margin: 5px;
         padding: 8px;
         background-color: rgb(15, 15, 15);
-        color: white;
-        border: 2px solid white;
+        color: rgb(211, 211, 211);
+        border: 2px solid rgb(211, 211, 211);
         border-radius: 5px;
     }
     .theme > h3 > ul > li > button
@@ -588,14 +585,14 @@ footer, #contact, #mes_competences, #boissons{
         margin: 5px 0px 5px 0px;
         padding: 8px;
         background-color: rgb(39, 41, 37);
-        color: white;
-        border: 1px solid white;
+        color: rgb(211, 211, 211);
+        border: 1px solid rgb(211, 211, 211);
         border-radius: 5px;
         cursor: pointer;
     }
     .theme > h3 > ul > li > button:hover
     {
-        background-color: white;
+        background-color: rgb(211, 211, 211);
         color: rgb(37, 29, 23);
         border: 1px solid rgb(37, 29, 23);
     }
@@ -628,6 +625,7 @@ footer, #contact, #mes_competences, #boissons{
     {
         background-image: url(./Ressources/bar2.jpg);
         background-size: cover;
+        background-position: 0%;
         background-attachment: scroll;
         background-repeat: no-repeat;
         background-color: #013328;
@@ -665,7 +663,7 @@ footer, #contact, #mes_competences, #boissons{
         "image3 texte3 texte3";
         margin: 0px 250px 0px 250px;
         padding: 90px 0 90px 0;
-        max-width: 45%;
+        max-width: 60%;
     }
     /* CARDS */
     .cards_boissons > .cards
